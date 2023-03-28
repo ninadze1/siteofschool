@@ -53,9 +53,12 @@ header {
     background-size: cover;
     width: 250px;
     height: 30px;
+    animation: rubberBand 1s 1;
   }
   .subscribe{
     border-radius: 20px;
+    animation: pulse 1s infinite;
+    
   }
 
 
@@ -78,7 +81,7 @@ header {
   }
   
   .banner button {
-    background-color: #fff;
+    background-color:#FFD300;
     color: #5D4E89;
     border: none;
     padding: 10px 30px;
@@ -114,6 +117,7 @@ header {
     color: #5D4E89;
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .courses-text{
@@ -168,8 +172,9 @@ header {
   }
   
   .teacher h3 {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .teacher p {
@@ -197,7 +202,8 @@ header {
     font-size: 24px;
   }
   .price{
-    color: yellow;
+    color: #FFD300;
+    /* text-shadow: 1px 1px 1px #000; */
     font-size: 24px;
   }
 .item-scribe{
@@ -210,6 +216,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -248,6 +255,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 
@@ -291,7 +299,8 @@ header {
 footer{
   display: flex;
   justify-content: space-between;
-  padding: 50px 100px;
+  padding: 20px 100px;
+  background-color: #221f1f;
 
 }
   .socsetis{
@@ -312,4 +321,13 @@ footer{
   }
   .socseti2{
     background-image: url(facebook.png);
+  }
+
+  /* адаптивность */
+  @media (max-width:500px) {
+    .allteachers{
+      display: flex;
+      flex-direction: column;
+    }
+    
   }
